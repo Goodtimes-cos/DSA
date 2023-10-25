@@ -1,4 +1,6 @@
 #include<iostream>
+#include <vector>
+using namespace std;
 
 // Singly Linked List Node
 class ListNode {
@@ -80,8 +82,8 @@ public:
     }
 
     // Method to get values of the linked list
-    std::vector<int> getValues() {
-        std::vector<int> res;
+    vector<int> getValues() {
+        vector<int> res;
         ListNode* curr = head->next;
         while (curr != nullptr) {
             res.push_back(curr->val);
